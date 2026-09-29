@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250">
+  <rect width="400" height="250" fill="#eef1f6"/>
+  <!-- case -->
+  <rect x="130" y="25" width="140" height="200" rx="8" fill="#14213d"/>
+  <rect x="142" y="37" width="116" height="176" rx="4" fill="#2b3a67"/>
+  <!-- fans -->
+  <circle cx="200" cy="80" r="26" fill="none" stroke="#fca311" stroke-width="4"/>
+  <circle cx="200" cy="80" r="6" fill="#fca311"/>
+  <circle cx="200" cy="150" r="26" fill="none" stroke="#fca311" stroke-width="4"/>
+  <circle cx="200" cy="150" r="6" fill="#fca311"/>
+  <!-- graphics card -->
+  <rect x="152" y="188" width="96" height="14" rx="3" fill="#9aa5b5"/>
+  <!-- power button -->
+  <circle cx="200" cy="215" r="3" fill="#fca311"/>
+</svg>

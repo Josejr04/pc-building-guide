@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Step-by-step guide to assembling your first custom PC.">
+  <title>PC Building Guide - Build Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header role="banner">
+    <h1>PC Building Guide</h1>
+    <nav role="navigation">
+      <ul>
+        <li><a href="index.html" title="Go to the home page">Home</a></li>
+        <li><a href="parts.html" title="Learn what each PC part does">Parts</a></li>
+        <li><a href="build.html" title="Follow the step-by-step build guide">Build Guide</a></li>
+        <li><a href="contact.html" title="Ask for build advice">Get Advice</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article role="article">
+      <h2>Step-by-Step Build Guide</h2>
+      <p>Take your time and work on a clean, flat surface. Touch bare metal on the case first to discharge static electricity.</p>
+
+      <section>
+        <h3>Build Steps</h3>
+        <ol>
+          <li>Install the CPU onto the motherboard (line up the small triangle on the corner).</li>
+          <li>Install the RAM sticks until they click into place.</li>
+          <li>Mount the SSD into its slot on the motherboard.</li>
+          <li>Place the motherboard inside the case.</li>
+          <li>Install the power supply and plug in its cables.</li>
+          <li>Install the graphics card in the long slot.</li>
+          <li>Connect the front panel and fan cables.</li>
+          <li>Close the case and power on.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3>After It Turns On</h3>
+        <p>Your first boot goes into a setup screen called the BIOS. Two things to check there:</p>
+
+        <!--
+          MDN ITEM 2 of 6: the <code> element (inline computer code)
+          WHAT IT IS: <code> marks a short piece of computer code or a setting
+                      name, and browsers show it in a monospace (typewriter) font.
+          WHERE IT IS: in the two list items below (build.html, "After It Turns On" section).
+          HOW I USE IT: I wrap BIOS setting names and a keyboard command in <code>
+                        so readers can clearly see exactly what to look for.
+        -->
+        <ul>
+          <li>Turn on the memory speed profile by setting <code>XMP Profile = Enabled</code>.</li>
+          <li>Confirm the drive is listed under <code>Boot Priority</code>.</li>
+          <li>Save and exit with the <code>F10</code> key.</li>
+        </ul>
+      </section>
+
+      <aside>
+        <h3>Tip</h3>
+        <p>Take photos as you go. If something does not fit, you can look back at how it was before.</p>
+      </aside>
+    </article>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2026 PC Building Guide. Made for CIT 384, Project 1.</p>
+  </footer>
+
+</body>
+</html>

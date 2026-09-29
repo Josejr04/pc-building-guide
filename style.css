@@ -1,0 +1,160 @@
+/* ============================================================
+   style.css - one shared stylesheet for all 4 pages
+   Each rule is a selector (what to style) followed by { } with
+   properties (how to style it).
+   ============================================================ */
+
+/* Whole page: font, background color, and text color */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f4f8;
+  color: #1f2933;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Top banner with the site title */
+header {
+  background-color: #14213d;
+  color: #ffffff;
+  padding: 20px 40px 0 40px;
+}
+
+header h1 {
+  margin: 0 0 12px 0;
+}
+
+/* Navigation bar: turn the bullet list into a horizontal row */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 18px;
+}
+
+/* Highlight nav links when the mouse is over them */
+nav a:hover {
+  background-color: #fca311;
+  color: #14213d;
+}
+
+/* Main content area: centered white card */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+article {
+  background-color: #ffffff;
+  padding: 25px 35px;
+  border-radius: 8px;
+  border: 1px solid #d5dae1;
+}
+
+/* Headings */
+h2 {
+  color: #14213d;
+  border-bottom: 3px solid #fca311;
+  padding-bottom: 6px;
+}
+
+h3 {
+  color: #2b3a67;
+}
+
+/* Links inside the page content */
+main a {
+  color: #1d4ed8;
+}
+
+/* Images: keep them from overflowing and add a border */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #d5dae1;
+  border-radius: 6px;
+}
+
+/* Code style used for the <code> element on build.html */
+code {
+  background-color: #eef1f6;
+  color: #b3261e;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+}
+
+/* Box for the tip on build.html (the <aside> element) */
+aside {
+  background-color: #fff4e0;
+  border-left: 5px solid #fca311;
+  padding: 5px 20px;
+  margin-top: 25px;
+}
+
+/* Narrow box on parts.html so the <wbr> word breaks are visible */
+.narrow {
+  width: 260px;
+  border: 2px dashed #9aa5b5;
+  padding: 10px;
+  background-color: #f7f9fc;
+}
+
+/* Form styling for contact.html */
+fieldset {
+  border: 2px solid #14213d;
+  border-radius: 8px;
+  padding: 15px 25px;
+}
+
+legend {
+  font-weight: bold;
+  color: #14213d;
+  padding: 0 10px;
+}
+
+input,
+textarea {
+  padding: 8px;
+  border: 1px solid #9aa5b5;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+button {
+  background-color: #14213d;
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fca311;
+  color: #14213d;
+}
+
+/* Footer at the bottom of every page */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  background-color: #14213d;
+}
+
+footer p {
+  margin: 0;
+}

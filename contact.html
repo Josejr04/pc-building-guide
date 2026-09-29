@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Ask for PC build advice using this simple form.">
+  <title>PC Building Guide - Get Advice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header role="banner">
+    <h1>PC Building Guide</h1>
+    <nav role="navigation">
+      <ul>
+        <li><a href="index.html" title="Go to the home page">Home</a></li>
+        <li><a href="parts.html" title="Learn what each PC part does">Parts</a></li>
+        <li><a href="build.html" title="Follow the step-by-step build guide">Build Guide</a></li>
+        <li><a href="contact.html" title="Ask for build advice">Get Advice</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article role="article">
+      <h2>Get Build Advice</h2>
+      <p>Tell me what you want to build and your budget. This form is a demo, so it does not send anywhere yet.</p>
+
+      <form action="#" method="get">
+
+        <!--
+          MDN ITEM 3 of 6: the <fieldset> element (group of form controls)
+          WHAT IT IS: <fieldset> groups related form fields together and the
+                      browser draws a box around them. <legend> is its title.
+          WHERE IT IS: wraps the whole set of form fields below (contact.html).
+          HOW I USE IT: I group the "Your Build Request" fields into one labeled box
+                        so the form is easier to read and understand.
+        -->
+        <fieldset>
+          <legend>Your Build Request</legend>
+
+          <!--
+            MDN ITEM 4 of 6: the autofocus attribute
+            WHAT IT IS: autofocus puts the blinking cursor in that field as soon
+                        as the page loads.
+            WHERE IT IS: on the "Your name" input right below (contact.html).
+            HOW I USE IT: the visitor can start typing their name immediately
+                          without clicking first.
+          -->
+          <p>
+            <label for="name">Your name:</label><br>
+            <input type="text" id="name" name="name" autofocus>
+          </p>
+
+          <!--
+            MDN ITEM 5 of 6: the dir attribute
+            WHAT IT IS: dir sets the text direction: ltr (left-to-right),
+                        rtl (right-to-left) or auto (browser decides from the text).
+            WHERE IT IS: on the "Your message" textarea below (contact.html).
+            HOW I USE IT: dir="auto" lets visitors write in any language, including
+                          right-to-left ones like Arabic, and it displays correctly.
+          -->
+          <p>
+            <label for="message">Your message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="40" dir="auto"></textarea>
+          </p>
+
+          <!--
+            MDN ITEM 6 of 6: the pattern attribute
+            WHAT IT IS: pattern is a rule (a regular expression) the text typed
+                        in a field must match, or the browser blocks the form.
+            WHERE IT IS: on the "Budget" input below (contact.html).
+            HOW I USE IT: pattern="[0-9]{3,5}" only accepts a whole-dollar budget
+                          of 3 to 5 digits (for example 800 or 1500).
+          -->
+          <p>
+            <label for="budget">Budget in dollars (numbers only):</label><br>
+            <input type="text" id="budget" name="budget" pattern="[0-9]{3,5}" title="Enter 3 to 5 digits, for example 1200" required>
+          </p>
+
+          <p>
+            <button type="submit">Send Request</button>
+          </p>
+        </fieldset>
+
+      </form>
+    </article>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2026 PC Building Guide. Made for CIT 384, Project 1.</p>
+  </footer>
+
+</body>
+</html>
