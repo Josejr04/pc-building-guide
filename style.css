@@ -1,30 +1,37 @@
-/* ============================================================
-   style.css - one shared stylesheet for all 4 pages
-   Each rule is a selector (what to style) followed by { } with
-   properties (how to style it).
-   ============================================================ */
+/* JR Computer Building Guide - main stylesheet (hand-written, no frameworks) */
 
-/* Whole page: font, background color, and text color */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f2f4f8;
-  color: #1f2933;
   line-height: 1.6;
+  color: #222222;
+  background-color: #eef1f5;
   margin: 0;
 }
 
-/* Top banner with the site title */
+/* ---------- Top bar ---------- */
 header {
-  background-color: #14213d;
-  color: #ffffff;
-  padding: 20px 40px 0 40px;
+  background-color: #A89247;
+  color: #14213d;
+  padding: 15px 20px;
+  overflow: hidden; /* keeps the floated logo inside the bar */
 }
 
 header h1 {
-  margin: 0 0 12px 0;
+  margin: 0 0 10px 0;
+  color: #14213d;
 }
 
-/* Navigation bar: turn the bullet list into a horizontal row */
+/* Logo sits at the top right of the bar */
+.logo {
+  float: right;
+}
+
+header img.logo {
+  border: none;
+  border-radius: 0;
+}
+
+/* ---------- Navigation ---------- */
 nav ul {
   list-style: none;
   margin: 0;
@@ -33,52 +40,52 @@ nav ul {
 
 nav li {
   display: inline-block;
+  margin-right: 8px;
 }
 
 nav a {
-  display: block;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 10px 18px;
-}
-
-/* Highlight nav links when the mouse is over them */
-nav a:hover {
-  background-color: #fca311;
   color: #14213d;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
 }
 
-/* Main content area: centered white card */
+nav a:hover {
+  background-color: #14213d;
+  color: #ffffff;
+}
+
+/* ---------- Main content ---------- */
 main {
   max-width: 800px;
-  margin: 30px auto;
-  padding: 0 20px;
+  margin: 20px auto;
+  padding: 0 15px;
 }
 
 article {
   background-color: #ffffff;
-  padding: 25px 35px;
+  padding: 20px 25px;
   border-radius: 8px;
   border: 1px solid #d5dae1;
 }
 
-/* Headings */
 h2 {
   color: #14213d;
-  border-bottom: 3px solid #fca311;
-  padding-bottom: 6px;
 }
 
 h3 {
-  color: #2b3a67;
+  color: #14213d;
 }
 
-/* Links inside the page content */
-main a {
-  color: #1d4ed8;
+section {
+  margin-bottom: 20px;
 }
 
-/* Images: keep them from overflowing and add a border */
+a {
+  color: #0b5394;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -86,75 +93,73 @@ img {
   border-radius: 6px;
 }
 
-/* Code style used for the <code> element on build.html */
-code {
-  background-color: #eef1f6;
-  color: #b3261e;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-family: "Courier New", monospace;
-}
-
-/* Box for the tip on build.html (the <aside> element) */
-aside {
-  background-color: #fff4e0;
-  border-left: 5px solid #fca311;
-  padding: 5px 20px;
-  margin-top: 25px;
-}
-
-/* Narrow box on parts.html so the <wbr> word breaks are visible */
-.narrow {
-  width: 260px;
+/* ---------- Motherboard model name (wbr demo) ---------- */
+.model-name {
+  display: inline-block;
+  max-width: 100%;
   border: 2px dashed #9aa5b5;
   padding: 10px;
   background-color: #f7f9fc;
 }
 
-/* Form styling for contact.html */
+/* ---------- Code ---------- */
+code {
+  background-color: #eef1f5;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+}
+
+/* ---------- Tip box ---------- */
+aside {
+  background-color: #fff8e1;
+  border-left: 5px solid #A89247;
+  padding: 5px 15px;
+  margin-top: 20px;
+}
+
+/* ---------- Form ---------- */
 fieldset {
-  border: 2px solid #14213d;
-  border-radius: 8px;
-  padding: 15px 25px;
+  border: 2px solid #A89247;
+  border-radius: 6px;
+  padding: 15px;
 }
 
 legend {
   font-weight: bold;
   color: #14213d;
-  padding: 0 10px;
+  padding: 0 8px;
 }
 
-input,
+input[type="text"],
 textarea {
-  padding: 8px;
+  width: 100%;
+  max-width: 400px;
+  padding: 6px;
   border: 1px solid #9aa5b5;
   border-radius: 4px;
-  font-size: 1em;
+  box-sizing: border-box;
 }
 
 button {
   background-color: #14213d;
   color: #ffffff;
   border: none;
-  padding: 10px 24px;
-  font-size: 1em;
+  padding: 10px 18px;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 button:hover {
-  background-color: #fca311;
+  background-color: #A89247;
   color: #14213d;
 }
 
-/* Footer at the bottom of every page */
+/* ---------- Footer ---------- */
 footer {
   text-align: center;
-  padding: 20px;
-  color: #ffffff;
-  background-color: #14213d;
-}
-
-footer p {
-  margin: 0;
+  padding: 15px;
+  color: #444444;
+  font-size: 0.9rem;
 }

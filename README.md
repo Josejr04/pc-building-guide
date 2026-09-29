@@ -1,4 +1,4 @@
-# PC Building Guide
+# JR Computer Building Guide
 
 A four-page beginner's guide to building a custom PC. Made for CIT 384, Project 1 (HTML and CSS).
 
@@ -10,6 +10,7 @@ A four-page beginner's guide to building a custom PC. Made for CIT 384, Project 
 - `build.html` - Step-by-step build guide
 - `contact.html` - Get advice form
 - `style.css` - Shared stylesheet
+- `images/` - Media folder (logo and part photos)
 
 ## MDN elements and attributes used
 | Item | Type | File |

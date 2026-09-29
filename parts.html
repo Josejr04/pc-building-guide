@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="What each part of a custom PC does: CPU, GPU, RAM, storage, motherboard, power supply.">
-  <title>PC Building Guide - Parts</title>
+  <title>JR Computer Building Guide - Parts</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header role="banner">
-    <h1>PC Building Guide</h1>
+    <img src="images/logo.png" alt="JR logo" width="70" height="70" class="logo">
+    <h1>JR Computer Building Guide</h1>
     <nav role="navigation">
       <ul>
         <li><a href="index.html" title="Go to the home page">Home</a></li>
@@ -28,55 +29,60 @@
       <section>
         <h3>Processor (CPU)</h3>
         <p>The brain of the computer. It runs programs and handles instructions.</p>
-           <img src="images/cpu.jpg" alt="A computer processor chip" width="300">
+        <img src="images/cpu.jpg" alt="A computer processor chip" width="300">
       </section>
 
       <section>
         <h3>Graphics Card (GPU)</h3>
         <p>Draws everything you see, especially games and video.</p>
-             <img src="images/gpu.jpg" alt="A graphics card" width="300">
+        <img src="images/gpu.jpg" alt="A graphics card" width="300">
       </section>
 
       <section>
         <h3>Memory (RAM)</h3>
         <p>Short-term memory. More RAM lets you keep more things open at once.</p>
-             <img src="images/ram.jpg" alt="Sticks of computer memory" width="300">
+        <img src="images/ram.jpg" alt="Sticks of computer memory" width="300">
       </section>
 
       <section>
         <h3>Storage (SSD)</h3>
         <p>Where your files, programs and Windows live. An SSD is much faster than an old hard drive.</p>
+        <img src="images/ssd.jpg" alt="A solid state drive" width="300">
       </section>
 
       <section>
         <h3>Motherboard</h3>
         <p>The main circuit board that every other part plugs into.</p>
+        <img src="images/motherboard.jpg" alt="A computer motherboard" width="300">
       </section>
 
       <section>
         <h3>Power Supply (PSU)</h3>
         <p>Turns wall power into the power your parts need.</p>
+        <img src="images/psu.jpg" alt="A computer power supply unit" width="300">
       </section>
 
       <section>
         <h3>Example Part Names</h3>
-        <p>Real part names are long. This is where the wbr element helps.</p>
 
         <!--
           MDN ITEM 1 of 6: the <wbr> element (word break opportunity)
           WHAT IT IS: <wbr> tells the browser a place where it is allowed to
                       break a very long word onto a new line if it runs out of room.
-          WHERE IT IS: in the model number in the paragraph below (parts.html, "Example Part Names" section).
-          HOW I USE IT: I put <wbr> between chunks of the long part name so it wraps
-                        cleanly instead of running off the edge of the page.
+                      Real part names are long, which is why this element is useful.
+          WHERE IT IS: inside the motherboard model name in the paragraph below
+                       (parts.html, "Example Part Names" section).
+          HOW I USE IT: I put <wbr> in the middle of "MICROATX" so that on a narrow
+                        window the long model name can wrap cleanly instead of
+                        running off the edge of the page.
         -->
-        <p class="narrow">Example motherboard model: PRO<wbr>-B650M<wbr>-A<wbr>-WIFI<wbr>-DDR5<wbr>-AM5<wbr>-MICRO<wbr>-ATX<wbr>-GAMING<wbr>-EDITION</p>
+        <p class="model-name">Example motherboard model: PRO-B650M-A-WIFI-MICRO<wbr>ATX-GAMING</p>
       </section>
     </article>
   </main>
 
   <footer role="contentinfo">
-    <p>&copy; 2026 PC Building Guide. Made for CIT 384, Project 1.</p>
+    <p>&copy; 2026 JR Computer Building Guide. Made for CIT 384, Project 1.</p>
   </footer>
 
 </body>
