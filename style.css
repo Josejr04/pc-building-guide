@@ -104,10 +104,12 @@ img {
 
 /* ---------- Code ---------- */
 code {
-  background-color: #eef1f5;
+  background-color: #fdeaea;
+  color: #c0182b;
   padding: 2px 5px;
   border-radius: 3px;
   font-family: "Courier New", monospace;
+  font-weight: bold;
 }
 
 /* ---------- Tip box ---------- */
